@@ -34,7 +34,8 @@
                                 </div>
                             @enderror
                             <label class="fs-6 mb-1" for="inputEmailAddress">Email</label>
-                            <input class="form-control" id="inputEmailAddress" name="email" type="text" placeholder="Input Your Email"/>
+                            <input class="form-control" id="inputEmailAddress" name="email" type="text" placeholder="Input Your Email"
+                             value="{{ old('email') }}"/>
                             @if($errors->has('email'))
                                 <span class="badge rounded-pill bg-warning text-dark">{{ $errors->first('email') }}</span>
                             @endif
