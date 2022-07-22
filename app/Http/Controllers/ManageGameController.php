@@ -81,7 +81,6 @@ class ManageGameController extends Controller
                 'description' => $request->input('description'),
             ])->save();
 
-            
         }
 
         return redirect('/admin/managegame')->with('message', 'Add Game Success');

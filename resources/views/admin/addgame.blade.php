@@ -54,7 +54,7 @@
                         </div>
                         <div class="input-group mb-3">
                             <input type="file" name="thumbnail" class="form-control @if($errors->has('thumbnail')) is-invalid @endif" id="inputThumb">
-                            <label class="input-group-text" for="inputThumb">Thumbnail (460 x 215)</label>
+                            <label class="input-group-text" for="inputThumb">Thumbnail </label>
                             @if($errors->has('thumbnail'))
                                 <div class="invalid-feedback">
                                     {{ $errors->first('thumbnail') }}
